@@ -5,6 +5,7 @@ const app = express();
 
 app.use("/js", express.static(path.resolve(__dirname, "js")));
 app.use("/css", express.static(path.resolve(__dirname, "css")));
+app.use("/views", express.static(path.resolve(__dirname, "views")));
 
 
 app.get("/*", (req, res) => {
